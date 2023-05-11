@@ -1,0 +1,106 @@
+.islbuddy,
+.start {
+  display: inline-block;
+}
+.islbuddy {
+  margin: 0;
+  position: absolute;
+  top: calc(50% - 265.5px);
+  left: 271.21px;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  width: 200.39px;
+  height: 48.92px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.19);
+}
+.start {
+  position: relative;
+  font-size: 36px;
+  font-weight: 500;
+  font-family: var(--font-montserrat);
+  color: var(--color-darkslategray);
+  text-align: center;
+  text-decoration: none;
+  width: 102.74px;
+  height: 39.44px;
+  flex-shrink: 0;
+  
+}
+.start-button {
+  cursor: pointer;
+  border: 0;
+  padding: 0 54.6002197265625px;
+  background-color: var(--color-lightgoldenrodyellow);
+  position: absolute;
+  top: calc(50% + 205.88px);
+  left: 264.4px;
+  border-radius: 25px;
+  width: 212.42px;
+  height: 59.62px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: center;
+  text-decoration: none;
+}
+.logo-icon {
+  position: absolute;
+  top: calc(50% - 129.17px);
+  left: 191.39px;
+  width: 295.7px;
+  height: 295.05px;
+  object-fit: cover;
+}
+.your-personal-sign {
+  margin: 0;
+  position: absolute;
+  top: calc(50% - 216.58px);
+  left: 0;
+  font-size: 26px;
+  font-weight: 500;
+  font-family: inherit;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 769px;
+  height: 66.04px;
+}
+.contents {
+  position: relative;
+  width: 769px;
+  height: 531px;
+}
+.landing,
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-content {
+  background-color: var(--color-darkslateblue);
+  width: 1600px;
+  height: 900px;
+  padding: 184px 0;
+  box-sizing: border-box;
+  justify-content: flex-start;
+}
+.landing {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  justify-content: center;
+  text-align: left;
+  font-size: 40px;
+  color: var(--color-whitesmoke);
+  font-family: var(--font-montserrat);
+}
+a {
+  color: var(--color-darkslategray);
+}

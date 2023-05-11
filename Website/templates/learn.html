@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="../static/global.css" />
+    <link rel="stylesheet" href="../static/learn.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="learn" id="learn-div">
+      <div class="learn-categories-navbar">
+        <a href="{{url_for('selection')}}"><img
+          class="learn-categories-navbar-child"
+          alt=""
+          src="../static/images/group-9.svg"
+          id="group"
+        /></a>
+
+        <b class="categories">CATEGORIES</b>
+        <a href="{{url_for('index')}}"><button class="logo3" id="logo"></button></a>
+      </div>
+      <div class="categories1">
+        <a href="{{url_for('numbers')}}">
+          <button class="numbers2" id="numbers-btn">
+            <div class="numbers-child" id="rectangle"></div>
+            <div class="numbers3">NUMBERS</div>
+          </button>
+        </a>
+        <a href="{{url_for('alphabets')}}">
+          <button class="alphabets2" id="alphabets-btn">
+            <div class="alphabets-child" id="rectangle1"></div>
+            <div class="alphabets3">ALPHABETS</div>
+          </button>
+        </a>
+        <a href="{{url_for('commonphrases')}}">
+          <button class="alphabets2" id="phrases-btn">
+            <div class="alphabets-child" id="rectangle2"></div>
+            <div class="common-phrases1">COMMON PHRASES</div>
+          </button>
+        </a>
+      </div>
+    </div>
+
+  </body>
+</html>

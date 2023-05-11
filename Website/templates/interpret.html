@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="../static/global.css" />
+    <link rel="stylesheet" href="../static/interpret.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="interpret" id="interpret-div">
+      <div class="interpret-navbar">
+        <button class="ellipse-group" id="back-btn">
+          <a href="{{url_for('selection')}}"><img class="instance-inner" alt="" src="../static/images/ellipse-16.svg" /></a>
+
+          <a href="{{url_for('selection')}}"><img class="arrow-icon" alt="" src="../static/images/arrow-16.svg" /></a>
+        </button>
+        <b class="detect">DETECT</b>
+        <a href="{{url_for('index')}}"><button class="logo1" id="logo"></button></a>
+      </div>
+      <div class="choice">
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+          <input name="imgfile" id="image" type="file" accept="image/png, image/jpeg" onchange="preview()"  style="display:none;"/>
+          <button class="upload-wrapper" id="upload-btn">
+          <div class="upload"><label for="image">UPLOAD</label></div>
+          </button>
+        </form>
+        <button class="open-camera-wrapper" id="opencam">
+          <div class="open-camera">OPEN CAMERA</div>
+        </button>
+      </div>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="../static/global.css" />
+    <link rel="stylesheet" href="../static/play-video.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="play-video" id="playvideo-div">
+      <div class="play-video-navbar">
+        <button class="ellipse-container" id="back-btn">
+          <a href="{{url_for('prev')}}"><img class="ellipse-icon" alt="" src="../static/images/ellipse-16.svg" /></a>
+
+          <a href="{{url_for('prev')}}"><img class="instance-child1" alt="" src="../static/images/arrow-16.svg" /></a>
+        </button>
+        <a href="{{url_for('index')}}"><img class="logo-icon1" alt="" src="../static/images/logo1@3x.png" /></a>
+      </div>
+      <video class="video-area" controls autoplay muted loop>
+        <source src="../static/videos/iamfine.mp4" />
+      </video>
+    </div>
+  </body>
+</html>

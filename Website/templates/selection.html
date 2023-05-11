@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="../static/global.css" />
+    <link rel="stylesheet" href="../static/selection.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="selection" id="selection-div">
+      <div class="selection-navbar">
+        <div class="selection-navbar-child"></div>
+        <button class="ellipse-parent3" id="back-btn">
+          <a href="{{url_for('index')}}"><img class="instance-child8" alt="" src="../static/images/ellipse-16.svg" /></a>
+
+          <a href="{{url_for('index')}}"><img class="instance-child9" alt="" src="../static/images/arrow-16.svg" /></a>
+        </button>
+        <b class="select">SELECT</SELECT></b>
+        <a href="{{url_for('index')}}"><button class="logo4" id="logo"></button></a>
+      </div>
+      <div class="choice1">
+        <button class="learn-wrapper" id="learn-btn">
+          <div class="learn1"><a href="{{url_for('learn')}}">LEARN</a></div>
+        </button>
+        <button class="interpret-wrapper" id="interpret-btn">
+          <div class="interpret1"><a href="{{url_for('interpret')}}">INTERPRET</a></div>
+        </button>
+      </div>
+    </div>
+
+  </body>
+</html>

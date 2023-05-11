@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="../static/global.css" />
+    <link rel="stylesheet" href="../static/numbers.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="numbers" id="numbers-div">
+      <div class="learn-numbers-navbar">
+        <button class="ellipse-parent2" id="back-btn">
+          <a href="{{url_for('learn')}}"><img class="instance-child6" alt="" src="../static/images/ellipse-16.svg" /></a>
+          <a href="{{url_for('learn')}}"><img class="instance-child7" alt="" src="../static/images/arrow-16.svg" /></a>
+        </button>
+
+        <b class="numbers1">NUMBERS</b>
+        <a href="{{url_for('index')}}"><button class="logo2" id="logo"></button></a>
+      </div>
+      <div class="numbers-list">
+        <a href="{{url_for('playvideo', c=0)}}">
+          <button class="one" id="one-btn">
+            <div class="one-1">One (1)</div>
+          </button>
+        </a>
+        <a href="{{url_for('playvideo')}}">
+          <button class="two" id="two-btn">
+            <div class="two-2">Two (2)</div>
+          </button>
+        </a>
+        <a href="{{url_for('playvideo')}}">
+          <button class="three" id="three-btn">
+            <div class="three-3">Three (3)</div>
+          </button>
+        </a>
+        <a href="{{url_for('playvideo')}}">
+          <button class="four" id="four-btn">
+            <div class="four-4">Four (4)</div>
+          </button>
+        </a>
+        <a href="{{url_for('playvideo')}}">
+          <button class="five" id="five-btn">
+            <div class="five-child" id="rectangle"></div>
+            <div class="five-5">Five (5)</div>
+          </button>
+        </a>
+        <a href="{{url_for('playvideo')}}">
+          <button class="six" id="six-btn">
+            <div class="six-6">Six (6)</div>
+          </button>
+        </a>
+        <a href="{{url_for('playvideo')}}">
+          <button class="seven" id="seven-btn">
+            <div class="seven-7">Seven (7)</div>
+          </button>
+        </a>
+        <a href="{{url_for('playvideo')}}">
+          <button class="eight" id="eight-btn">
+            <div class="eight-8">Eight (8)</div>
+          </button>
+        </a>
+        <a href="{{url_for('playvideo')}}">
+          <button class="nine" id="nine-btn">
+            <div class="nine-9">Nine (9)</div>
+          </button>
+        </a>
+        <a href="{{url_for('playvideo')}}">
+          <button class="zero" id="zero-btn">
+            <div class="zero-0">Zero (0)</div>
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <script>
+      var groupButton = document.getElementById("back-btn");
+      if (groupButton) {
+        groupButton.addEventListener("click", function (e) {
+          window.location.href = "./learn.html";
+        });
+      }
+      
+      var six = document.getElementById("six-btn");
+      if (six) {
+        six.addEventListener("click", function (e) {
+          window.location.href = "./play-video.html";
+        });
+      }
+      
+      var two = document.getElementById("two-btn");
+      if (two) {
+        two.addEventListener("click", function (e) {
+          window.location.href = "./play-video.html";
+        });
+      }
+      
+      var four = document.getElementById("four-btn");
+      if (four) {
+        four.addEventListener("click", function (e) {
+          window.location.href = "./play-video.html";
+        });
+      }
+      
+      var one = document.getElementById("one-btn");
+      if (one) {
+        one.addEventListener("click", function (e) {
+          window.location.href = "./play-video.html";
+        });
+      }
+      
+      var three = document.getElementById("three-btn");
+      if (three) {
+        three.addEventListener("click", function (e) {
+          window.location.href = "./play-video.html";
+        });
+      }
+      
+      var rectangle = document.getElementById("rectangle");
+      if (rectangle) {
+        rectangle.addEventListener("click", function (e) {
+          window.location.href = "./play-video.html";
+        });
+      }
+      
+      var five = document.getElementById("five-btn");
+      if (five) {
+        five.addEventListener("click", function (e) {
+          window.location.href = "./play-video.html";
+        });
+      }
+      
+      var seven = document.getElementById("seven-btn");
+      if (seven) {
+        seven.addEventListener("click", function (e) {
+          window.location.href = "./play-video.html";
+        });
+      }
+      
+      var zero = document.getElementById("zero-btn");
+      if (zero) {
+        zero.addEventListener("click", function (e) {
+          window.location.href = "./play-video.html";
+        });
+      }
+      
+      var eight = document.getElementById("eight-btn");
+      if (eight) {
+        eight.addEventListener("click", function (e) {
+          window.location.href = "./play-video.html";
+        });
+      }
+      
+      var nine = document.getElementById("nine-btn");
+      if (nine) {
+        nine.addEventListener("click", function (e) {
+          window.location.href = "./play-video.html";
+        });
+      }
+      </script>
+  </body>
+</html>
