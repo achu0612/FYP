@@ -7,4 +7,5 @@ To be done:
   <li> Play videos according to the selection : @achu WILL BE DONE WHEN THE VIDEOS ARE AVAILABLE
   <li> Perform detection using upload : @prakalya
   <li> Stream web camera live footage to rendering.html : @achu is progress
+  <li> Perform detection real time : Dependent on #4
 </ol>
