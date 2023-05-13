@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="../static/global.css" />
+    <link rel="stylesheet" href="../static/numbers.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="numbers" id="numbers-div">
+      <div class="learn-numbers-navbar">
+        <button class="ellipse-parent2" id="back-btn">
+          <a href="{{url_for('learn')}}"><img class="instance-child6" alt="" src="../static/images/ellipse-16.svg" /></a>
+          <a href="{{url_for('learn')}}"><img class="instance-child7" alt="" src="../static/images/arrow-16.svg" /></a>
+        </button>
+
+        <b class="numbers1">NUMBERS</b>
+        <a href="{{url_for('index')}}"><button class="logo2" id="logo"></button></a>
+      </div>
+      <div class="numbers-list">
+
+          <button class="one" id="one-btn" onclick="playVideo('1')">
+            <div class="one-1">One (1)</div>
+          </button>
+
+          <button class="two" id="two-btn" onclick="playVideo('2')">
+            <div class="two-2">Two (2)</div>
+          </button>
+
+          <button class="three" id="three-btn" onclick="playVideo('3')">
+            <div class="three-3">Three (3)</div>
+          </button>
+
+          <button class="four" id="four-btn" onclick="playVideo('4')">
+            <div class="four-4">Four (4)</div>
+          </button>
+
+          <button class="five" id="five-btn" onclick="playVideo('5')">
+            <div class="five-child" id="rectangle"></div>
+            <div class="five-5">Five (5)</div>
+          </button>
+
+          <button class="six" id="six-btn" onclick="playVideo('6')">
+            <div class="six-6">Six (6)</div>
+          </button>
+
+          <button class="seven" id="seven-btn" onclick="playVideo('7')">
+            <div class="seven-7">Seven (7)</div>
+          </button>
+
+          <button class="eight" id="eight-btn" onclick="playVideo('8')">
+            <div class="eight-8">Eight (8)</div>
+          </button>
+
+          <button class="nine" id="nine-btn" onclick="playVideo('9')">
+            <div class="nine-9">Nine (9)</div>
+          </button>
+
+          <button class="zero" id="zero-btn" onclick="playVideo('0')">
+            <div class="zero-0">Zero (0)</div>
+          </button>
+
+      </div>
+    </div>
+    <script>
+      function playVideo(videoName) {
+        window.location.href = '/play-video?video=' + videoName;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="../static/global.css" />
+    <link rel="stylesheet" href="../static/play-video.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap"
+    />
+    <script src="../static/js/back-btn.js"></script>
+  </head>
+  <body>
+    <div class="play-video" id="playvideo-div">
+      <div class="play-video-navbar">
+        <button class="ellipse-container" id="back-btn">
+          <img class="ellipse-icon" alt="" src="../static/images/ellipse-16.svg" />
+
+          <img class="instance-child1" alt="" src="../static/images/arrow-16.svg" />
+        </button>
+        <a href="{{url_for('index')}}"><img class="logo-icon1" alt="" src="../static/images/logo1@3x.png" /></a>
+      </div>
+      <h2 id="content" class="titlevid">I am fine</h2>
+      <video id="player" class="video-area" controls autoplay muted loop>
+        <source id="source" src="" type="video/mp4">
+      </video>
+    </div>
+    <script>
+      window.onload = function() {
+        var player = document.getElementById('player');
+        var source = document.getElementById('source');
+        var queryParams = new URLSearchParams(window.location.search);
+        var videoName = queryParams.get('video');
+        source.src = '../static/videos/' + videoName + '.mp4';
+        var text = document.getElementById("content");
+        text.textContent = videoName;
+        player.load();
+        player.play();
+      }
+    </script>
+  </body>
+</html>

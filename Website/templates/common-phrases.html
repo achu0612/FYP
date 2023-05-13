@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="../static/global.css" />
+    <link rel="stylesheet" href="../static/common-phrases.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="common-phrases" id="phrases-div">
+      <div class="learn-phrases-navbar">
+        <button class="group-button" id="back-btn">
+          <a href="{{url_for('learn')}}"><img class="instance-child2" alt="" src="../static/images/ellipse-16.svg" /></a>
+
+          <a href="{{url_for('learn')}}"><img class="instance-child3" alt="" src="../static/images/arrow-16.svg" /></a>
+        </button>
+        <b class="phrases">PHRASES</b>
+        <a href="{{url_for('index')}}"><img class="logo-icon2" alt="" src="../static/images/logo3@2x.png" /></a>
+      </div>
+      <div class="phrases-list">
+          <button class="hello" id="hello" onclick="playVideo('hello')">
+            <div class="hello1">Hello</div>
+          </button>
+
+          <button class="good-night" id="gn" onclick="playVideo('goodnight')">
+            <div class="good-night1">Good night</div>
+          </button>
+
+          <button class="no" id="no" onclick="playVideo('no')">
+            <div class="no1">No</div>
+          </button>
+
+          <button class="bye" id="bye" onclick="playVideo('bye')">
+            <div class="bye1">Bye</div>
+          </button>
+
+          <button class="how-are-you" id="hwru" onclick="playVideo('howareyou')">
+            <div class="how-are-you1">How are you</div>
+          </button>
+
+          <button class="i-am-fine" id="iamfine" onclick="playVideo('iamfine')">
+            <div class="i-am-fine1">I am fine</div>
+          </button>
+
+          <button class="thank-you" id="thankyou" onclick="playVideo('thankyou')">
+            <div class="thank-you1">Thank you</div>
+          </button>
+
+          <button class="good-morning" id="gm" onclick="playVideo('goodmorning')">
+            <div class="good-morning1">Good morning</div>
+          </button>
+
+          <button class="sorry" id="sorry" onclick="playVideo('sorry')">
+            <div class="sorry1">Sorry</div>
+          </button>
+
+          <button class="yes" id="yes" onclick="playVideo('yes')">
+            <div class="yes1">Yes</div>
+          </button>
+
+
+          <button class="welcome" id="welcome" onclick="playVideo('welcome')">
+            <div class="welcome1">Welcome</div>
+          </button>
+
+          <button class="please" id="please" onclick="playVideo('please')">
+            <div class="please1">Please</div>
+          </button>
+
+          <button class="good-afternoon" id="ga" onclick="playVideo('goodafternoon')">
+            <div class="good-afternoon1">Good afternoon</div>
+          </button>
+
+          <button class="good-evening" id="ge" onclick="playVideo('goodevening')">
+            <div class="good-evening1">Good evening</div>
+          </button>
+
+      </div>
+    </div>
+    <script>
+      function playVideo(videoName) {
+        window.location.href = '/play-video?video=' + videoName;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="../static/global.css" />
+    <link rel="stylesheet" href="../static/alphabets.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="alphabets" id="alphabets-div">
+      <div class="learn-alphabets-navbar">
+        <button class="ellipse-parent1" id="back-btn">
+          <a href="{{url_for('learn')}}"><img class="instance-child4" alt="" src="../static/images/ellipse-16.svg" /></a>
+
+          <a href="{{url_for('learn')}}"><img class="instance-child5" alt="" src="../static/images/arrow-16.svg" /></a>
+        </button>
+        <b class="alphabets1">ALPHABETS</b>
+        <a href="{{url_for('index')}}"><img class="logo-icon3" alt="" src="../static/images/logo3@2x.png" /></a>
+      </div>
+      <div class="alphabet-list">
+
+        <button class="a" id="a-btn" onclick="playVideo('A')">
+          <div class="a-child"></div>
+          <div class="a1">A</div>
+        </button>
+        
+        <button class="b" id="b-btn" onclick="playVideo('B')">
+          <div class="b1">B</div>
+        </button>
+        
+        <button class="c" id="c-btn" onclick="playVideo('C')">
+          <div class="c1">C</div>
+        </button>
+        
+        <button class="d" id="d-btn" onclick="playVideo('D')">
+          <div class="d-child"></div>
+          <div class="d1">D</div>
+        </button>
+        
+        <button class="e" id="e-btn" onclick="playVideo('E')">
+          <div class="e1">E</div>
+        </button>
+        
+        <button class="f" id="f-btn" onclick="playVideo('F')">
+          <div class="f1">F</div>
+        </button>
+        
+        <button class="g" id="g-btn" onclick="playVideo('G')">
+          <div class="g1">G</div>
+        </button>
+        
+        <button class="h" id="h-btn" onclick="playVideo('H')">
+          <div class="h1">H</div>
+        </button>
+        
+        <button class="i" id="i-btn" onclick="playVideo('I')">
+          <div class="i1">I</div>
+        </button>
+        
+        <button class="j" id="j-btn" onclick="playVideo('J')">
+          <div class="j1">J</div>
+        </button>
+        
+        <button class="k" id="k-btn" onclick="playVideo('K')">
+          <div class="p-child" id="rectangle3"></div>
+          <div class="k1">K</div>
+        </button>
+        
+        <button class="l" id="l-btn" onclick="playVideo('L')">
+          <div class="l1">L</div>
+        </button>
+        
+        <button class="m" id="m-btn" onclick="playVideo('M')">
+          <div class="m1">M</div>
+        </button>
+        
+        <button class="n" id="n-btn" onclick="playVideo('N')">
+          <div class="p-child" id="rectangle4"></div>
+          <div class="n1">N</div>
+        </button>
+        
+        <button class="o" id="o-btn" onclick="playVideo('O')">
+          <div class="p-child" id="rectangle6"></div>
+          <div class="o1">O</div>
+        </button>
+        
+        <button class="p" id="p-btn" onclick="playVideo('P')">
+          <div class="p-child" id="rectangle2"></div>
+          <div class="p1">P</div>
+        </button>
+        
+        <button class="q" id="q-btn" onclick="playVideo('Q')">
+          <div class="q1">Q</div>
+        </button>
+        
+        <button class="r" id="r-btn" onclick="playVideo('R')">
+          <div class="l1">R</div>
+        </button>
+        
+        <button class="s" id="s-btn" onclick="playVideo('S')">
+          <div class="s1">S</div>
+        </button>
+
+        <button class="t" id="t-btn" onclick="playVideo('T')">
+          <div class="t-child" id="rectangle5"></div>
+          <div class="t1">T</div>
+        </button>
+
+        <button class="u" id="u-btn" onclick="playVideo('U')">
+          <div class="u1">U</div>
+        </button>
+
+        <button class="v" id="v-btn" onclick="playVideo('V')">
+          <div class="v1">V</div>
+        </button>
+
+        <button class="w" id="w-btn" onclick="playVideo('W')">
+          <div class="w1">W</div>
+        </button>
+
+        <button class="x" id="x-btn" onclick="playVideo('X')">
+          <div class="x1">X</div>
+        </button>
+
+        <button class="y" id="y-btn" onclick="playVideo('Y')">
+          <div class="y1">Y</div>
+        </button>
+
+        <button class="z" id="z-btn" onclick="playVideo('Z')">
+          <div class="z1">Z</div>
+        </button>
+        
+        
+      </div>
+    </div>
+    <script>
+      function playVideo(videoName) {
+        window.location.href = '/play-video?video=' + videoName;
+      }
+    </script>
+  </body>
+</html>
